@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Todo List Manager</h1>
+    
+    <div id="taskList">
+    </div>
+    
+    <form id="addTaskForm">
+        <input type="text" id="taskTitle" placeholder="Task Title" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <div id="sortTasks">
+        <label for="sortOption">Sort by:</label>
+        <select id="sortOption">
+            <option value="dateAdded">Date Added</option>
+            <option value="title">Title</option>
+        </select>
+    </div>
+
+    <div id="filterTasks">
+        <label for="filterOption">Filter:</label>
+        <input type="text" id="filterOption" placeholder="Search task...">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
